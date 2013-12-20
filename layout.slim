@@ -1,0 +1,14 @@
+- @title = 'Rozzy Blog'
+- @header_needed = @footer_needed = true
+
+doctype html
+html
+  head
+    title == @title
+    == slim :meta
+    == slim :styles
+    == slim :scripts
+  body
+    == slim :header if @header_needed
+    == yield
+    == slim :footer if @footer_needed
