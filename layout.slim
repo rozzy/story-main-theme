@@ -6,9 +6,9 @@ html
   head
     title == @title
     == slim :meta
+    == slim :fonts
     == slim :styles
     == slim :scripts
-    == slim :fonts
   body
     == slim :header if @header_needed
     == yield
