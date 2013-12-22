@@ -1,2 +1,39 @@
 @import compass/reset
 @import compass/css3
+
+$fz: 16px
+$lh: 24px
+$safewebserif: "Times New Roman", Times, serif
+$ptserif: 'PT Serif', "Times New Roman", Times, serif
+$italicbold: 'Merriweather', "Times New Roman", Times, serif
+$grotesque: Helvetica, Arial
+
+html, body
+  background: white
+  font: $safewebserif
+  font-size: $fz
+  line-height: $lh
+
+header
+  width: 100%
+  background: #393939
+  text-align: center
+  padding: 50px 0
+  color: #fff
+
+  img.logo
+    max-width: 300px
+
+  h1
+    margin: 30px 0
+    font-size: 64px
+    font-family: $ptserif
+    letter-spacing: 2px
+    font-weight: 300
+    font-variant: small-caps
+
+  h2
+    font-size: 16px
+    font-family: $italicbold
+    font-style: italic
+    color: #fafafa
